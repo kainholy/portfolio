@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/*
+GENERAL STYLING
+================================================ */
+html {
+    font-size: 100%;
+}
+body {
+	color: rgb(68, 68, 68);
+	font-family: sans-serif;
+}
+
+/*
+COMMON
+================================================ */
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+}
+p {
+    line-height: 1.7;
+    font-size: 1.125rem;
+    padding: 2px;
+}
+
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*
+HERO
+================================================ */
+.hero {
+    background-image: url(images/1_flower.jpg);
+    background-position: center top;
+    text-align: justify;
+    padding-left: 7rem;
+    padding-top: 15rem;
+}
+
+/*
+MENU
+================================================ */
+.menu {
+    background-image: url(images/2_flower.jpg);
+    background-position: center top;
+    display: flex;
+    align-items: center;
+}
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin-left: 950px;
+    margin-bottom: 100px;
+}
+.menu-list tr {
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+    line-height: 1.7;
+}
+.menu-list th {
+    font-weight: normal;
+}
+.menu-list td {
+    padding-left: 2rem;
+}
+
+/*
+CONTACT
+================================================ */
+.contact {
+    background-image: url(images/3_flower.jpg);
+    background-position: center;
+    padding-top: 8vh;
+    padding-left: 10rem;
+    padding-top: 9rem;
+}
+.btn {
+    background: #555;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2rem 0 2.25rem;
+}
+.btn:hover {
+    background: #777;
+}
+.contact-sns {
+    display: flex;
+}
+.contact-sns a {
+    width: 3.75rem;
+    height: 3.75rem;
+    display: inline-block;
+    margin: 0 .5rem;
+    font-size: 2rem;
+    color: #555;
+}
+
+/*
+MOBILE SIZE
+================================================ */
+@media (max-width: 700px) {
+    .title {
+        font-size: 4rem;
+    }
+    p {
+        padding: 0 1rem;
+    }
+    p,
+    .menu-list li {
+        font-size: 1rem;
+    }
+    .hero {
+        padding-top: 12vh;
+    }
+}
